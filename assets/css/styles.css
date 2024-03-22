@@ -5,3 +5,93 @@
 :root {
   --primary-color: #171100;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  height: 10000px;
+}
+
+/* common */
+.content {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.btn {
+  width: fit-content;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header  */
+
+header.header {
+  padding: 47px 0 14px;
+  background-color: #fffcf4;
+}
+
+header.sticky {
+  position: sticky;
+  left: 0;
+  top: -33px;
+  z-index: 1;
+}
+
+header.header .btn-sign-up {
+  padding: 11px 41px;
+  line-height: 28px;
+}
+
+header.header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 49px;
+}
+
+header.header .nav .nav-item {
+  padding: 0 21px;
+}
+
+header.header .nav .nav-item a {
+  color: #5f5b53;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+header.header .nav .active a {
+  position: relative;
+  color: #171100;
+  font-weight: 600;
+}
+
+header.header .nav .active a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: 0;
+}
