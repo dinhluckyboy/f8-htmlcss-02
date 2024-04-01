@@ -472,3 +472,75 @@ header.header .nav .active a::before {
 .popular .row-bottom .payment .btn:hover {
   background-color: var(--secondary-color);
 }
+
+/* feedback  */
+
+.feedback {
+  padding: 96px 0;
+  background-color: #2e2100;
+}
+
+.feedback .info {
+  width: 34%;
+}
+
+.feedback-1 {
+  display: flex;
+}
+
+.feedback .info img.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback .info p.name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: Sen;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 141.667% */
+}
+
+.feedback .info p.desc {
+  color: #bfbcb2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+}
+
+.feedback .info .box-dot {
+  margin-top: 28px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+}
+
+.feedback .info .dot-item {
+  width: 6px;
+  height: 6px;
+  background-color: #634700;
+  border-radius: 50%;
+}
+
+.feedback .info .dot-item.active {
+  background-color: #ffb900;
+}
+
+.feedback .quote {
+  width: 66%;
+}
+
+.feedback .quote p.desc {
+  margin-left: 30px;
+  color: #fff;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40px; /* 153.846% */
+}
