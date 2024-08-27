@@ -82,6 +82,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- style css  -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <!-- font  -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
   </head>
@@ -89,23 +90,59 @@
     <!-- header  -->
     <header class="header sticky">
       <div class="content">
-        <div class="row">
-          <img src="./assets/img/logo.svg" alt="logo" class="logo" />
-          <div class="nav">
-            <div class="nav-item active"><a href="!#">Home</a></div>
-            <div class="nav-item"><a href="!#">Courses</a></div>
-            <div class="nav-item"><a href="!#">Pricing</a></div>
-            <div class="nav-item"><a href="!#">Reviews</a></div>
+        <div class="row header-container">
+          <div class="bars-mobile hide-on-pc">
+            <label for="check-bars">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                fill="currentColor"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </label>
           </div>
-          <div class="btn btn-sign-up">Sign Up</div>
+          <img src="./assets/img/logo.svg" alt="logo" class="logo" />
+          <div class="nav hide-on-tablet hide-on-mobile">
+            <div class="nav-item active"><a href="#!">Home</a></div>
+            <div class="nav-item"><a href="#!">Courses</a></div>
+            <div class="nav-item"><a href="#!">Pricing</a></div>
+            <div class="nav-item"><a href="#!">Reviews</a></div>
+          </div>
+          <div class="btn btn-sign-up hide-on-mobile">Sign Up</div>
         </div>
       </div>
     </header>
+    <!-- mobile header  -->
+    <div class="mobile-nav hide-on-pc">
+      <input
+        type="checkbox"
+        name="check-bars"
+        id="check-bars"
+        for="check-bars"
+        class="check-bars"
+        hidden
+      />
+      <label for="check-bars" class="menu-overlay"></label>
+      <div class="menu-drawer">
+        <div class="nav">
+          <div class="nav-item active"><a href="#!">Home</a></div>
+          <div class="nav-item"><a href="#!">Courses</a></div>
+          <div class="nav-item"><a href="#!">Pricing</a></div>
+          <div class="nav-item"><a href="#!">Reviews</a></div>
+          <div class="btn btn-sign-up hide-on-tablet">Sign Up</div>
+        </div>
+      </div>
+    </div>
     <main>
       <!-- hero  -->
       <div class="hero">
         <div class="content">
-          <div class="row">
+          <div class="row container">
+            <!-- media  -->
             <div class="img-desc">
               <img
                 src="./assets/img/img-hero.jpg"
@@ -142,6 +179,7 @@
                 </div>
               </div>
             </div>
+            <!-- info  -->
             <div class="info">
               <div class="container">
                 <h1 class="title">
